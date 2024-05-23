@@ -34,11 +34,14 @@ const Navber = () => {
         Open
       </Button>
       <Drawer title="Basic Drawer" onClose={onClose} open={open}>
-      <ul className="flex">
+      <ul className="flex flex-col">
                 <Link href="/"><li className="mx-4">Home</li></Link>
                 <Link href="/about"><li className="mx-4">About</li></Link>
                 <Link href="/services"><li className="mx-4">Services</li></Link>
             </ul>
+            <div className="">
+            <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">Login</button>
+        </div>
       </Drawer>
       </div>
     </div>
